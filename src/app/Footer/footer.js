@@ -3,54 +3,40 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      {/* Contact Section */}
-      <section id="contact" className="bg-black text-white py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-          <p className="mb-4">I'd love to hear from you!</p>
-          <a
-            href="mailto:shrestha7prafulla@gmail.com"
-            className="bg-white text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
-          >
-            Email Me
-          </a>
-        </div>
-      </section>
-
       {/* Footer Section */}
-      <footer className="bg-black text-white p-4 shadow-md">
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-8 shadow-xl mt-12">
         <div className="container mx-auto text-center">
-
-          {/* Contact Info */}
-          <div className="mb-4">
-            <h3 className="text-lg font-bold">Contact Information</h3>
-            <p>
+          
+          {/* Contact Info with an id */}
+          <div id="contact" className="mb-6">
+            <h3 className="text-xl font-semibold text-gray-300">Contact Information</h3>
+            <p className="mt-2">
               Email:{" "}
               <a
                 href="mailto:shrestha7prafulla@gmail.com"
-                className="hover:underline"
+                className="hover:underline text-indigo-400"
               >
                 shrestha7prafulla@gmail.com
               </a>
             </p>
-            <p>
+            <p className="mt-2">
               Phone:{" "}
-              <a href="tel:+1234567890" className="hover:underline">
-                +123 456 7890
+              <a href="tel:+977 9810354021" className="hover:underline text-indigo-400">
+                +977 9810354021
               </a>
             </p>
-            <p>Address: Kathmandu, Nepal</p>
+            <p className="mt-2">Address: Kathmandu, Nepal</p>
           </div>
 
           {/* Social Links */}
           <div>
-            <h4 className="text-md font-semibold">Follow Me</h4>
-            <div className="flex justify-center space-x-4 mt-2">
+            <h4 className="text-lg font-semibold text-gray-300">Follow Me</h4>
+            <div className="flex justify-center space-x-6 mt-4">
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="text-indigo-400 hover:text-white transition"
               >
                 Twitter
               </a>
@@ -58,7 +44,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="text-indigo-400 hover:text-white transition"
               >
                 LinkedIn
               </a>
@@ -66,7 +52,7 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="text-indigo-400 hover:text-white transition"
               >
                 GitHub
               </a>
@@ -74,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Note */}
-          <div className="mt-4 text-sm">
+          <div className="mt-8 text-sm text-gray-400">
             &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
           </div>
         </div>
